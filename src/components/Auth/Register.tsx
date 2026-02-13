@@ -137,12 +137,12 @@ export default function Register() {
 
             <p className="mt-4 text-center text-sm text-gray-500">
               Already have an account?{" "}
-              <a
-                href="/login"
+              <Link
+                to="/login"
                 className="font-semibold text-green-600 transition hover:text-green-500"
               >
                 Sign in
-              </a>
+              </Link>
             </p>
           </div>
         </div>

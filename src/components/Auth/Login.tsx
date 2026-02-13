@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Login() {
   const [ready, setReady] = useState(false);
@@ -146,12 +147,12 @@ export default function Login() {
             {/* Footer link */}
             <p className="mt-5 text-center text-sm text-gray-500">
               Don&#39;t have an account?{" "}
-              <a
-                href="/register"
+              <Link
+                to="/register"
                 className="font-semibold text-green-600 transition hover:text-green-500"
               >
                 Create one
-              </a>
+              </Link>
             </p>
           </div>
         </div>
