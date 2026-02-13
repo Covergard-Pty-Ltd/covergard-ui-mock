@@ -48,7 +48,6 @@ export default function Navbar() {
     });
   };
 
-  // Ensure only one dropdown is open at a time.
   const toggleLogin = () => {
     setLoginOpen((open) => {
       const next = !open;
@@ -61,7 +60,7 @@ export default function Navbar() {
   const closeLogin = () => setLoginOpen(false);
 
   return (
-    <nav className="fixed left-0 top-0 z-50 w-full overflow-x-clip bg-white py-2 shadow-sm sm:py-3">
+    <nav className="fixed left-0 top-0 z-50 w-full bg-white py-2 shadow-sm sm:py-3">
       {/* Three-column layout: brand, desktop links, action area */}
       <div className="mx-auto grid w-full max-w-[1500px] grid-cols-[auto,1fr,auto] items-center gap-2 px-2 sm:gap-3 sm:px-6 lg:px-8">
         <BrandLink />
@@ -69,7 +68,6 @@ export default function Navbar() {
 
         {/* Right: Search, Account, Cart, Hamburger */}
         <div className="flex min-w-0 items-center justify-end gap-1 sm:gap-2.5">
-
           {/* Account dropdown */}
           <div ref={loginRef} className="relative">
             <button
@@ -87,7 +85,7 @@ export default function Navbar() {
               <div
                 id="login-menu"
                 role="menu"
-                className="absolute right-0 mt-2 w-36 max-w-[calc(100vw-1rem)] rounded-md border border-gray-100 bg-white py-1 shadow-md sm:w-40"
+                className="absolute right-0 mt-2 w-36 max-w-[calc(100vw-1rem)] rounded-md border border-gray-100 bg-white py-1 shadow-md sm:w-40 z-[1000]"
               >
                 <Link
                   to="/login"
@@ -227,7 +225,7 @@ function MobileMenu({
   return (
     <div
       id="mobile-menu"
-      className="absolute right-0 mt-2 w-40 max-w-[calc(100vw-1rem)] rounded-md border border-gray-100 bg-white py-1 shadow-md animate-fadein"
+      className="absolute right-0 mt-2 w-40 max-w-[calc(100vw-1rem)] rounded-md border border-gray-100 bg-white py-1 shadow-md animate-fadein z-[1000]"
     >
       <div className="flex flex-col">
         {links.map((link) => (

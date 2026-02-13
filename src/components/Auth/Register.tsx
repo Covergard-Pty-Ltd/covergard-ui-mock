@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Register() {
   const [ready, setReady] = useState(false);
@@ -117,13 +118,13 @@ export default function Register() {
                   className="mt-0.5 h-4 w-4 rounded border-green-200 text-green-600 focus:ring-green-200"
                 />
                 I agree to the{" "}
-                <a href="/terms" className="text-green-600 underline hover:text-green-500">
+                <Link to="/terms" className="text-green-600 underline hover:text-green-500">
                   terms and conditions
-                </a>{" "}
+                </Link>{" "}
                 and{" "}
-                <a href="/privacy" className="text-green-600 underline hover:text-green-500">
+                <Link to="/privacy" className="text-green-600 underline hover:text-green-500">
                   privacy policy.
-                </a>
+                </Link>
               </label>
 
               <button
