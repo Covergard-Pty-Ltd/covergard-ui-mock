@@ -69,7 +69,8 @@ export default function ProductPage() {
                 text-slate-700 font-semibold
                 transition-all duration-300 transform
                 hover:scale-105 hover:shadow-lg hover:bg-emerald-50 hover:text-emerald-700
-                animate-[fadeIn_0.5s_ease-out]">
+                animate-[fadeIn_0.5s_ease-out]"
+          >
             ← Back
           </button>
         </div>
@@ -150,22 +151,22 @@ export default function ProductPage() {
             </div>
 
             {/* ACTIONS */}
-            <div className="flex gap-4">
+            <div className="flex flex-col sm:flex-row gap-4">
               <Link
                 to="/register"
-                className="bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-emerald-500 hover:shadow-lg transition-all duration-300"
+                className="bg-emerald-600 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-emerald-500 hover:shadow-lg transition-all duration-300 text-center"
               >
                 Buy Now
               </Link>
               <Link
                 to="/#specials"
-                className="border border-slate-300 px-8 py-3 rounded-full font-semibold text-slate-700 hover:border-emerald-500 hover:text-emerald-600 transition-all duration-300"
+                className="border border-slate-300 px-8 py-3 rounded-full font-semibold text-slate-700 hover:border-emerald-500 hover:text-emerald-600 transition-all duration-300 text-center"
               >
                 Custom Quote
               </Link>
               <Link
                 to="/cart"
-                className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-emerald-500 hover:shadow-lg transition-all duration-300"
+                className="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold shadow hover:bg-emerald-500 hover:shadow-lg transition-all duration-300 text-center"
               >
                 Add to Cart
               </Link>
