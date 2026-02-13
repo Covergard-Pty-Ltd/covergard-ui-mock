@@ -58,7 +58,7 @@ export default function CartPage() {
     <main className="bg-slate-50 min-h-screen pb-20 pt-10 animate-[fadeIn_0.5s_ease-out]">
       <section className="max-w-6xl mx-auto px-6">
         <h1 className="text-4xl font-extrabold text-slate-900 mb-8">
-          Shopping Cart
+          Your Shopping Cart
         </h1>
 
         <div className="grid lg:grid-cols-3 gap-10">
