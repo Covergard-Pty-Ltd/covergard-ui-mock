@@ -30,7 +30,6 @@ type SpecialRequestForm = {
 
 const IMAGE_FALLBACK =
   "https://placehold.co/1200x900/e2e8f0/0f172a?text=CoverGard+Example";
-const HERO_IMAGE = "https://picsum.photos/seed/covergard-hero/1400/1000";
 
 function exampleProductImage(id: number): string {
   return `https://picsum.photos/seed/covergard-product-${id}/1200/900`;
@@ -777,7 +776,7 @@ export default function Home() {
               href="#catalog"
               className="inline-block rounded-full bg-emerald-400 px-10 py-4 text-lg font-bold text-emerald-950 transition duration-300 hover:-translate-y-1 hover:bg-emerald-300"
             >
-              Shop Covers
+              Shop our Covers
             </a>
           </div>
 
