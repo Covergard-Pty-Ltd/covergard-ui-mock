@@ -753,56 +753,96 @@ export default function Home() {
 
   return (
     <main className="w-full overflow-x-hidden pb-14">
-      <section className="relative overflow-hidden bg-slate-950 py-20 sm:py-28">
+      <section className="relative overflow-hidden bg-slate-950 py-16 sm:py-20 lg:py-28">
         {/* Background gradients */}
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_20%_20%,rgba(16,185,129,0.4),transparent_35%),radial-gradient(circle_at_85%_15%,rgba(250,204,21,0.25),transparent_30%),radial-gradient(circle_at_50%_100%,rgba(15,23,42,0.85),rgba(2,6,23,1))]" />
 
-        <div className="relative mx-auto w-full max-w-5xl px-4 sm:px-6 lg:px-14 text-center">
+        <div className="relative mx-auto w-full max-w-6xl px-5 sm:px-8 lg:px-16 text-center">
           {/* Company Name */}
-          <h1 className="text-6xl sm:text-8xl lg:text-[9rem] font-extrabold text-emerald-400 leading-tight tracking-tight drop-shadow-xl">
+          <h1
+            className="font-extrabold text-emerald-400 leading-[0.95] tracking-tight drop-shadow-2xl 
+                   text-[clamp(2.8rem,8vw,9rem)]"
+          >
             COVERGARD
           </h1>
 
           {/* Tagline */}
-          <p className="mt-6 text-lg sm:text-2xl text-slate-200 max-w-3xl mx-auto leading-relaxed">
+          <p
+            className="mt-6 sm:mt-8 text-base sm:text-lg md:text-xl lg:text-2xl 
+                  text-slate-200 max-w-3xl mx-auto leading-relaxed px-2"
+          >
             Protect your outdoor spaces with premium, weather-tested covers
-            built to fit perfectly, last for years, and keep your furniture
-            looking flawless in every season.
+            engineered for a precision fit, built for extreme durability, and
+            designed to keep your furniture flawless through every season.
           </p>
 
           {/* Call-to-Action */}
-          <div className="mt-10">
+          <div className="mt-8 sm:mt-10 lg:mt-12">
             <a
               href="#catalog"
-              className="inline-block rounded-full bg-emerald-400 px-10 py-4 text-lg font-bold text-emerald-950 transition duration-300 hover:-translate-y-1 hover:bg-emerald-300"
+              className="inline-block rounded-full bg-emerald-400 
+                   px-8 sm:px-10 py-3 sm:py-4 
+                   text-base sm:text-lg font-bold text-emerald-950 
+                   transition duration-300 
+                   hover:-translate-y-1 hover:bg-emerald-300"
             >
-              Shop our Covers
+              Shop Our Covers
             </a>
           </div>
 
-          {/* Enhanced Stats */}
-          <div className="mt-16 grid gap-6 sm:grid-cols-3">
-            <div className="flex flex-col items-center justify-center rounded-xl border border-white/10 bg-black/25 p-6 shadow-lg hover:scale-105 transition-transform">
-              <p className="text-4xl sm:text-5xl font-extrabold text-emerald-400">
+          {/* Stats */}
+          <div
+            className="mt-14 sm:mt-16 lg:mt-20 
+                    grid grid-cols-1 sm:grid-cols-3 
+                    gap-5 sm:gap-6"
+          >
+            {/* Stat 1 */}
+            <div
+              className="group flex flex-col items-center justify-center 
+                      rounded-2xl border border-white/10 
+                      bg-white/5 backdrop-blur-md 
+                      p-6 sm:p-8 
+                      shadow-lg transition duration-300 
+                      hover:-translate-y-2 hover:border-emerald-400/40"
+            >
+              <p className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-emerald-400">
                 3000+
               </p>
-              <p className="mt-2 text-slate-200 uppercase tracking-wide text-sm">
+              <p className="mt-2 text-slate-300 uppercase tracking-wider text-xs sm:text-sm">
                 Covers Delivered
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center rounded-xl border border-white/10 bg-black/25 p-6 shadow-lg hover:scale-105 transition-transform">
-              <p className="text-4xl sm:text-5xl font-extrabold text-emerald-400">
+
+            {/* Stat 2 */}
+            <div
+              className="group flex flex-col items-center justify-center 
+                      rounded-2xl border border-white/10 
+                      bg-white/5 backdrop-blur-md 
+                      p-6 sm:p-8 
+                      shadow-lg transition duration-300 
+                      hover:-translate-y-2 hover:border-emerald-400/40"
+            >
+              <p className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-emerald-400">
                 48h
               </p>
-              <p className="mt-2 text-slate-200 uppercase tracking-wide text-sm">
+              <p className="mt-2 text-slate-300 uppercase tracking-wider text-xs sm:text-sm">
                 Fast Dispatch
               </p>
             </div>
-            <div className="flex flex-col items-center justify-center rounded-xl border border-white/10 bg-black/25 p-6 shadow-lg hover:scale-105 transition-transform">
-              <p className="text-4xl sm:text-5xl font-extrabold text-emerald-400">
+
+            {/* Stat 3 */}
+            <div
+              className="group flex flex-col items-center justify-center 
+                      rounded-2xl border border-white/10 
+                      bg-white/5 backdrop-blur-md 
+                      p-6 sm:p-8 
+                      shadow-lg transition duration-300 
+                      hover:-translate-y-2 hover:border-emerald-400/40"
+            >
+              <p className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-emerald-400">
                 5yr
               </p>
-              <p className="mt-2 text-slate-200 uppercase tracking-wide text-sm">
+              <p className="mt-2 text-slate-300 uppercase tracking-wider text-xs sm:text-sm">
                 UV Fade Warranty
               </p>
             </div>
